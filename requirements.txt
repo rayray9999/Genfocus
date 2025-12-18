@@ -1,0 +1,11 @@
+transformers
+diffusers
+peft
+opencv-python
+protobuf
+sentencepiece
+gradio
+jupyter
+torchao
+git+https://github.com/apple/ml-depth-pro.git
+scikit-image
