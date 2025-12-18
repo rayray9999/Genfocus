@@ -2,10 +2,11 @@
 
 <div align="center">
 
-[![Project Website](https://img.shields.io/badge/Project-Website-87CEEB?style=for-the-badge&logo=google-chrome&logoColor=white)](https://generative-refocusing.github.io/)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue?style=for-the-badge)](https://huggingface.co/spaces/nycu-cplab/Genfocus-Demo)
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-green?style=for-the-badge)](https://huggingface.co/nycu-cplab/Genfocus-Model/tree/main)
-[![License](https://img.shields.io/badge/License-Apache%202.0-red?style=for-the-badge)](LICENSE)
+[![Project Page](https://img.shields.io/badge/Project-Page-green?logo=googlechrome&logoColor=green)](https://generative-refocusing.github.io/)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=red)]()
+[![YouTube Tutorial](https://img.shields.io/badge/YouTube-Tutorial-red?logo=youtube&logoColor=red)]()
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Go--with--the--Flow-blue)](https://huggingface.co/spaces/nycu-cplab/Genfocus-Demo)
+
 
 <div align="center">
   <img src="./assets/demo_vid.gif" width="50%" alt="Demo Video">
