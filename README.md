@@ -96,7 +96,5 @@ For any questions or suggestions, please open an issue or contact me at [raytm99
 
 <div align="center">
   <br>
-  <a href="https://github.com/rayray9999/Genfocus">
-    <img src="https://img.shields.io/github/stars/rayray9999/Genfocus?style=social" alt="GitHub stars">
-  </a>
+  <p>Star 🌟 this repository if you like it!</p>
 </div>
