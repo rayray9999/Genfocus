@@ -14,20 +14,11 @@
   A novel framework for synthesizing realistic bokeh and refocusing effects from a single image using generative priors.
 </p>
 
-<div style="width: 100%; text-align: center; margin: 20px 0;">
-    <video width="100%" autoplay loop muted playsinline>
-        <source src="./assets/demo_vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<div align="center">
+  <img src="./assets/demo_vid.gif" width="100%" alt="Demo Video">
 </div>
 
 </div>
-
----
-
-## 📖 Abstract
-
-We propose **Generative Refocusing**, a method to achieve flexible defocus control from a single image. Unlike traditional methods that rely solely on depth estimation, our approach leverages generative models to synthesize high-quality bokeh effects, handling occlusions and complex depth transitions with superior realism. This repository contains the official implementation, pre-trained models, and demo code.
 
 ---
 
@@ -37,19 +28,24 @@ Follow the steps below to set up the environment and run the inference demo.
 
 ### 1. Installation
 
-Clone the repository and install the dependencies:
+Clone the repository:
 
 ```bash
-# Clone the repository
 git clone git@github.com:rayray9999/Genfocus.git
 cd Genfocus
+````
 
-# Install requirements
+Install requirements:
+
+```bash
 pip install -r requirements.txt
+```
+
 ### 2\. Download Weights
 
 To run `demo.py`, you need to download the pre-trained models.
-Please visit our [Hugging Face Model](https://www.google.com/url?sa=E&source=gmail&q=https://huggingface.co/nycu-cplab/Genfocus-Model) and place the following files in the **root directory** of `Genfocus`:
+
+Please visit our [Hugging Face Model](https://huggingface.co/nycu-cplab/Genfocus-Model) and place the following files in the **root directory** of `Genfocus`:
 
 | Filename / Folder | Description | Destination Path |
 | :--- | :--- | :--- |
@@ -96,12 +92,9 @@ If you find this project useful for your research, please consider citing:
 
 ## 📧 Contact
 
-For any questions or suggestions, please open an issue or contact me at raytm9999.09@nycu.edu.tw.
+For any questions or suggestions, please open an issue or contact me at [raytm9999.09@nycu.edu.tw](mailto:raytm9999.09@nycu.edu.tw).
 
 \<div align="center"\>
 <br>
 \<p\>Star 🌟 this repository if you like it\!\</p\>
 \</div\>
-
-```
-```
