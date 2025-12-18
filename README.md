@@ -94,7 +94,9 @@ If you find this project useful for your research, please consider citing:
 
 For any questions or suggestions, please open an issue or contact me at [raytm9999.09@nycu.edu.tw](mailto:raytm9999.09@nycu.edu.tw).
 
-\<div align="center"\>
-<br>
-\<p\>Star 🌟 this repository if you like it\!\</p\>
-\</div\>
+<div align="center">
+  <br>
+  <a href="https://github.com/rayray9999/Genfocus">
+    <img src="https://img.shields.io/github/stars/rayray9999/Genfocus?style=social" alt="GitHub stars">
+  </a>
+</div>
