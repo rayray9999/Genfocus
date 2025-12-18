@@ -59,7 +59,9 @@ cd ..
 ```
 ### 3\. Run Gradio Demo
 
+> **Note:** The project uses [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev). You must request access and authenticate locally before running the demo.
 Launch the interactive web interface locally:
+
 
 ```bash
 python demo.py
