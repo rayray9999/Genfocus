@@ -55,7 +55,7 @@ mkdir -p checkpoints
 cd checkpoints
 wget [https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/checkpoints/depth_pro.pt](https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/checkpoints/depth_pro.pt)
 cd ..
-
+```
 ### 3\. Run Gradio Demo
 
 Launch the interactive web interface locally:
