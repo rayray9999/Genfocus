@@ -1,8 +1,3 @@
-抱歉，讓你感到困擾了！這是一個誤會，我剛剛雖然有放進程式碼區塊，但可能因為排版關係讓你覺得像是普通文字。
-
-這裡我直接提供**純粹的原始碼 (Raw Markdown Source)**，請直接點擊下方黑色區塊右上角的 **"Copy"** 按鈕，這就是完整的 `README.md` 檔案內容：
-
-````markdown
 # Generative Refocusing: Flexible Defocus Control from a Single Image
 
 <div align="center">
@@ -30,6 +25,12 @@
 
 ---
 
+## 📖 Abstract
+
+We propose **Generative Refocusing**, a method to achieve flexible defocus control from a single image. Unlike traditional methods that rely solely on depth estimation, our approach leverages generative models to synthesize high-quality bokeh effects, handling occlusions and complex depth transitions with superior realism. This repository contains the official implementation, pre-trained models, and demo code.
+
+---
+
 ## ⚡ Quick Start
 
 Follow the steps below to set up the environment and run the inference demo.
@@ -45,8 +46,6 @@ cd Genfocus
 
 # Install requirements
 pip install -r requirements.txt
-````
-
 ### 2\. Download Weights
 
 To run `demo.py`, you need to download the pre-trained models.
