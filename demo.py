@@ -1,6 +1,9 @@
 import os
 import math
 import cv2
+custom_tmp_dir = "/project2/rayray9999/tmp"
+os.makedirs(custom_tmp_dir, exist_ok=True)
+os.environ["GRADIO_TEMP_DIR"] = custom_tmp_dir
 import gradio as gr
 import torch
 import numpy as np
