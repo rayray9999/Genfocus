@@ -7,15 +7,8 @@
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-green?style=for-the-badge)](https://huggingface.co/nycu-cplab/Genfocus-Model)
 [![License](https://img.shields.io/badge/License-Apache%202.0-red?style=for-the-badge)](LICENSE)
 
-<h1>Generative Refocusing</h1>
-<h3>Flexible Defocus Control from a Single Image</h3>
-
-<p align="center">
-  A novel framework for synthesizing realistic bokeh and refocusing effects from a single image using generative priors.
-</p>
-
 <div align="center">
-  <img src="./assets/demo_vid.gif" width="100%" alt="Demo Video">
+  <img src="./assets/demo_vid.gif" width="50%" alt="Demo Video">
 </div>
 
 </div>
