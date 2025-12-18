@@ -28,6 +28,13 @@ git clone git@github.com:rayray9999/Genfocus.git
 cd Genfocus
 ````
 
+Environment setup:
+
+```bash
+conda create -n Genfocus python=3.12
+conda activate Genfocus
+```
+
 Install requirements:
 
 ```bash
