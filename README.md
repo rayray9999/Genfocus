@@ -47,13 +47,13 @@ You can download the pre-trained models using the following commands. Ensure you
 
 ```bash
 # 1. Download main models to the root directory
-wget [https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/bokehNet.safetensors](https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/bokehNet.safetensors)
-wget [https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/deblurNet.safetensors](https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/deblurNet.safetensors)
+wget https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/bokehNet.safetensors
+wget https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/deblurNet.safetensors
 
 # 2. Setup checkpoints directory and download auxiliary model
 mkdir -p checkpoints
 cd checkpoints
-wget [https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/checkpoints/depth_pro.pt](https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/checkpoints/depth_pro.pt)
+wget https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/checkpoints/depth_pro.pt
 cd ..
 ```
 ### 3\. Run Gradio Demo
