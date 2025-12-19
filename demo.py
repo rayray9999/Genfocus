@@ -1,22 +1,13 @@
 import os
 import math
 import cv2
-custom_tmp_dir = "/project2/rayray9999/tmp"
-os.makedirs(custom_tmp_dir, exist_ok=True)
-os.environ["GRADIO_TEMP_DIR"] = custom_tmp_dir
 import gradio as gr
 import torch
 import numpy as np
 from PIL import Image, ImageDraw
 from skimage import color, img_as_float32, img_as_ubyte
 from diffusers import FluxPipeline
-
-
-try:
-    from Genfocus.pipeline.flux import Condition, generate, seed_everything
-    print("✅ Loaded Condition/generate from Genfocus.pipeline.flux")
-except ImportError:
-    raise RuntimeError("❌ Cannot find 'Genfocus' pipeline.")
+from Genfocus.pipeline.flux import Condition, generate, seed_everything
 
 import depth_pro
 
@@ -377,5 +368,5 @@ with gr.Blocks(css=css) as demo:
 
 if __name__ == "__main__":
     allowed_dir = os.path.join(base_path, "example")
-    allowed_paths = [allowed_dir, custom_tmp_dir]
+    allowed_paths = [allowed_dir]
     demo.launch(server_name="0.0.0.0", share=True, allowed_paths=allowed_paths)
