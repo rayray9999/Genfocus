@@ -3,8 +3,8 @@
 <div align="center">
 
 [![Project Page](https://img.shields.io/badge/Project-Page-green?logo=googlechrome&logoColor=green)](https://generative-refocusing.github.io/)
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=red)]()
-[![YouTube Tutorial](https://img.shields.io/badge/YouTube-Tutorial-red?logo=youtube&logoColor=red)]()
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2512.16923)
+[![YouTube Tutorial](https://img.shields.io/badge/YouTube-Tutorial-red?logo=youtube&logoColor=red)](https://youtu.be/v9ngZaYg_y0)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue)](https://huggingface.co/spaces/nycu-cplab/Genfocus-Demo)
 
 
@@ -91,7 +91,7 @@ If you find this project useful for your research, please consider citing:
 @article{Genfocus2025,
   title={Generative Refocusing: Flexible Defocus Control from a Single Image},
   author={Tuan Mu, Chun-Wei and Huang, Jia-Bin and Liu, Yu-Lun},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2512.16923},
   year={2025}
 }
 ```
