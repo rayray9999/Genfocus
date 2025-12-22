@@ -98,7 +98,7 @@ If you find this project useful for your research, please consider citing:
 
 ## 📧 Contact
 
-For any questions or suggestions, please open an issue or contact me at [raytm9999.09@nycu.edu.tw](mailto:raytm9999.09@nycu.edu.tw).
+For any questions or suggestions, please open an issue or contact me at [raytm9999.09@nycu.edu.tw](mailto:raytm9999.cs09@nycu.edu.tw).
 
 <div align="center">
   <br>
