@@ -66,7 +66,7 @@ Launch the interactive web interface locally:
 
 ```bash
 python demo.py
-
+```
 
 The demo will be accessible at `http://127.0.0.1:7860` in your browser.
 
