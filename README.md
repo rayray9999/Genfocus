@@ -59,13 +59,14 @@ cd ..
 ```
 ### 3\. Run Gradio Demo
 
-Launch the interactive web interface locally:
-> **Note:** The project uses [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev). You must request access and authenticate locally before running the demo.
-
+Launch the interactive web interface locally:  
+> **Note:** This project uses [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev). You must request access and authenticate locally before running the demo.  
+> ⚠️ **VRAM warning:** GPU memory usage can be high. On an NVIDIA A6000, peak usage may reach ~45GB depending on resolution and settings.  
+> **Tip (Advanced Settings):** If you want faster inference, try lowering **num_inference_steps**, resizing the input in **Advanced Settings**.
 
 ```bash
 python demo.py
-```
+
 
 The demo will be accessible at `http://127.0.0.1:7860` in your browser.
 
@@ -77,9 +78,11 @@ We are actively working on improving this project. Current progress:
 
   - [x] **Upload Model Weights**
   - [x] **Release HF Demo & Gradio Code** (with tiling tricks for high-res images)
-  - [ ] **Release Benchmark data**
   - [ ] **Release Inference Code** (Support for adjustable parameters/settings)
+  - [ ] **Release ComfyUI Workflow / Node**
+  - [ ] **Release Benchmark data**
   - [ ] **Release Training Code and Data**
+
 
 -----
 

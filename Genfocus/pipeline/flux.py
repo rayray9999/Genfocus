@@ -484,6 +484,7 @@ def generate(
     kv_cache=False,
     latent_mask=None,
     TILE_SIZE = 32,
+    NO_TILED_DENOISE=False,
     **params: dict,
 ):
     self = pipeline
@@ -567,11 +568,15 @@ def generate(
         TILED_DENOISE = False
     else:
         TILED_DENOISE = True
+
+    if NO_TILED_DENOISE:
+        TILED_DENOISE = False
+
         
     print(f"Latent size: {latent_h}x{latent_w}, Tiled denoise: {TILED_DENOISE}")
     # Prepare tiling coordinates if needed
     if TILED_DENOISE:
-        # Calculate tile positions with 25% overlap
+        # Calculate tile positions with 12.5% overlap
         overlap = TILE_SIZE // 8
         stride = TILE_SIZE - overlap
         
@@ -595,8 +600,6 @@ def generate(
         gaussian_2d = torch.exp(-(temp_d[:, None] ** 2 + temp_d[None] ** 2))
         # Flatten to match token format: [TILE_SIZE*TILE_SIZE]
         gaussian_weights = gaussian_2d.flatten()
-        #改成全一矩陣
-        one_weights = torch.ones_like(gaussian_weights)
     # Prepare conditions
     c_latents, uc_latents, c_ids, c_timesteps = ([], [], [], [])
     c_projections, c_guidances, c_adapters = ([], [], [])
@@ -656,7 +659,6 @@ def generate(
     # # Disable the attention from condition branches to image branch and text branch
     # if kv_cache:
     #     group_mask[2:, :2] = False
-    # 🚀 从您的 latent_image_ids 直接获取尺寸和映射
     def create_mapping_from_latent_ids(latent_image_ids):
         h_coords = latent_image_ids[:, 1]
         w_coords = latent_image_ids[:, 2]
@@ -668,11 +670,11 @@ def generate(
         h_coords = h_coords.int()
         w_coords = w_coords.int()
         
-        # 分步创建，避免参数顺序问题
+        
         coord_to_idx = torch.full((latent_h, latent_w), -1)
         coord_to_idx = coord_to_idx.to(dtype=torch.long, device=latent_image_ids.device)
         
-        # 向量化填充
+        
         coord_to_idx[h_coords, w_coords] = torch.arange(
             len(latent_image_ids), 
             device=latent_image_ids.device
@@ -683,7 +685,7 @@ def generate(
         coord_to_idx = create_mapping_from_latent_ids(latent_image_ids)
 
 
-    #先計算出condition 1 (blurry input)的tensor
+    
     #define disk kernel
     def make_disk_kernel(ksz: int, device, dtype):
         assert ksz >= 1
@@ -723,7 +725,7 @@ def generate(
                     h_end = ch + TILE_SIZE
                     w_end = cw + TILE_SIZE
                     # Extract tile
-                    # 🚀 批量提取索引 (替代所有查找循环!)
+                    
                     tile_indices = coord_to_idx[ch:h_end, cw:w_end].flatten()
                     tile_latents = latents[:, tile_indices]
                     tile_c_latents_0 = c_latents[0][:, tile_indices] if use_cond else None
