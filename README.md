@@ -92,8 +92,8 @@ If you find this project useful for your research, please consider citing:
 
 ```bibtex
 @article{Genfocus2025,
-  title={Generative Refocusing: Flexible Defocus Control from a Single Image},
   author={Tuan Mu, Chun-Wei and Huang, Jia-Bin and Liu, Yu-Lun},
+  title={Generative Refocusing: Flexible Defocus Control from a Single Image},
   journal={arXiv preprint arXiv:2512.16923},
   year={2025}
 }
