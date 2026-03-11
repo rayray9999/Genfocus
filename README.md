@@ -121,7 +121,9 @@ A variant of DeblurNet that utilizes a pre-deblurring module for heavily degrade
 **Note:** Please download the specific weight for this variant before running the inference:
 ```bash
 wget https://huggingface.co/nycu-cplab/Genfocus-Model/resolve/main/deblurNet_with_pre_deblur.safetensors
+```
 
+```bash
 python Inference_deblurNet_with_pre_deblur.py \
   --input inference_example/Blurry_example.jpg \
   --pre_deblur_input inference_example/Blurry_example_pre_deblur.jpg \
